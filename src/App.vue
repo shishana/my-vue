@@ -1,8 +1,4 @@
 <template>
-<my-comp 
-:abc="fatherText" 
-:changeClick="changeClick">
-</my-comp>
 </template>
 
 <script>
@@ -12,16 +8,7 @@ export default {
   components: { myComp },
 
   setup() {
-    const hanldeConsole = () => {
-      console.log("主分支")
-    }
-    const fatherText = ref("父组件传值")
-    function changeClick(val){
-      fatherText.value = val;
-    }
     return {
-      fatherText,
-      changeClick
     }
   }
 }
