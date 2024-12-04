@@ -12,8 +12,6 @@ export default {
   components: { myComp },
 
   setup() {
-    console.log("我是张巧敏")
-    console.log("我是主分支")
     const fatherText = ref("父组件传值")
     function changeClick(val){
       fatherText.value = val;
