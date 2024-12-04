@@ -12,6 +12,7 @@ export default {
   components: { myComp },
 
   setup() {
+    console.log("sss")
     const fatherText = ref("父组件传值")
     function changeClick(val){
       fatherText.value = val;
